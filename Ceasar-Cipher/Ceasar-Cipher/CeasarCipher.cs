@@ -74,7 +74,11 @@ namespace CeasarCipherNS
 
             Console.WriteLine("Enter your Key");
             int key = Convert.ToInt32(Console.ReadLine());
-            
+            while (key < 0)
+            {
+                Console.WriteLine("Your key is negative. Please enter correct Key");
+                key = Convert.ToInt32(Console.ReadLine());
+            }
             Console.WriteLine("\n");
             
 
